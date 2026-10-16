@@ -1,4 +1,4 @@
-# Selenium Automation Practice
+# Demo Web Shop Automation  (Selenium webdriver using Javascript)
 
 A small browser-automation project using JavaScript, Node.js, Selenium WebDriver, and Google Chrome. It contains page-object classes and example scripts for logging in to and registering an account on the [Demo Web Shop](https://demowebshop.tricentis.com/).
 
