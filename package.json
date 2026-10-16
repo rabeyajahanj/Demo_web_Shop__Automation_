@@ -4,12 +4,9 @@
   "description": "This is selenium basic project",
   "license": "ISC",
   "author": "Rabeya",
-  "type": "commonjs",
-  "main": "base.js",
+  "type": "module",
+  "main": "automation.js",
   "scripts": {
-    "test": "node base.js"
-  },
-  "dependencies": {
-    "selenium-webdriver": "^4.51.0"
+    "test": "node automation.js"
   }
 }
