@@ -5,7 +5,7 @@ import {LoginPage} from "../pages/loginPage.js";
 const result = new LoginPage();
 await result.openBrowser("https://demowebshop.tricentis.com/");
 await result.clickLoginLink();
-await result.enterEmail("rinta1584@gmail.com");
+await result.enterEmail("rinta1784@gmail.com");
 await result.enterPassword("password123");
 await result.ClickRememberMe();
 await result.ClickLoginButton();

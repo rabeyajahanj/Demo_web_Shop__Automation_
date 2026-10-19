@@ -1,18 +1,20 @@
 import { Builder, By } from "selenium-webdriver";
+import { Base } from "./base.js";
 
-class LoginPage {
-constructor(){
-    this.driver = new Builder().forBrowser("chrome").build();
+ class LoginPage extends Base{
+    constructor() {
+        super();
+    //this.driver = new Builder().forBrowser("chrome").build();
     this.Loginlink = By.xpath("//a[@href='/login']");
     this.email =By.id("Email");
     this.password = By.id("Password");
     this.rememberme = By.id("RememberMe");
     this.loginbutton = By.xpath("//input[@value='Log in']");
-}
-    async openBrowser(url) {
-        await this.driver.get(url);
-        await this.driver.manage().window().maximize();
     }
+    // async openBrowser(url) {
+    //     await this.driver.get(url);
+    //     await this.driver.manage().window().maximize();
+    // }
    
     async clickLoginLink(){
         await this.driver.findElement(this.Loginlink).click();
@@ -31,15 +33,16 @@ constructor(){
     }
 
     async ClickLoginButton(){
+        console.log("User Login Successfully");
         await this.driver.findElement(this.loginbutton).click();
     }
 
-     async closeBrowser() {
-        await this.driver.quit();
-    }
+    //  async closeBrowser() {
+    //     await this.driver.quit();
+    // }
 
 }
-export {LoginPage};
+export{LoginPage};
 // const result = new Login();
 //await result.openBrowser();
 // await result.clickLoginLink();

@@ -1,8 +1,10 @@
 import { Builder, By } from "selenium-webdriver";
+import { Base } from "./base.js";
 
- class RegisterPage {
+ class RegisterPage extends Base {
     constructor(){
-        this.driver = new Builder().forBrowser("chrome").build();
+        super(); // extend kora class er constructor k call korbe
+    //     this.driver = new Builder().forBrowser("chrome").build();
         this.registerlink = By.xpath("//a[@href='/register']"); //locator for register link; inside the constructor keep locator- run korle automatic involve hote hobe jeta constructor kore.
         this.gender = By.id("gender-female");
         this.firstname = By.id("FirstName");
@@ -13,11 +15,11 @@ import { Builder, By } from "selenium-webdriver";
         this.registerbutton = By.id("register-button");
         this.logoutbutton =By.xpath("//a[@href='/logout']");
     }
-    async openBrowser(url){
-        console.log("Browser opened successfully");
-        await this.driver.get(url);
-        await this.driver.manage().window().maximize();
-    }
+    // async openBrowser(url){
+    //     console.log("Browser opened successfully");
+    //     await this.driver.get(url);
+    //     await this.driver.manage().window().maximize();
+   // }
     async clickRegisterLink() {
         console.log("Register link clicked successfully");
         await this.driver.findElement(this.registerlink).click();
@@ -64,10 +66,10 @@ import { Builder, By } from "selenium-webdriver";
         await this.driver.findElement(this.logoutbutton).click();
     }   
 
-    async closeBrowser() {
-        console.log("Browser closed successfully");
-        await this.driver.quit();
-    }
+    // async closeBrowser() {
+    //     console.log("Browser closed successfully");
+    //     await this.driver.quit();
+    // }
     
 }
 export{RegisterPage};

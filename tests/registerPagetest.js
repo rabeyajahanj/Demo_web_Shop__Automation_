@@ -7,7 +7,7 @@ const result = new RegisterPage();
  await result.clickGender();
  await result.enterFirstName("Isaac");
  await result.enterLastName("Rintaraou");
- await result.enterEmail("rinta1584@gmail.com");
+ await result.enterEmail("rinta17004@gmail.com");
  await result.enterPassword("password123");
  await result.enterConfirmPassword("password123");
  await result.enterRegisterButton();
