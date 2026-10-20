@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8457","it should be the Second test","Login page load","2026-10-20","passed","2026-10-20","","","",""
+"","7893","it should be the first test","allure report generate","2026-10-20","passed","2026-10-20","","","",""
+"","11166","it should be the Third test","Add to cart","2026-10-20","passed","2026-10-20","","","",""
+"","12386","it should be the first test","allure report generate","2026-10-20","passed","2026-10-20","","","",""
+"","11785","it should be the Second test","Login page load","2026-10-20","passed","2026-10-20","","","",""
+"","17159","it should be the first test","allure report generate","2026-10-20","passed","2026-10-20","","","",""
+"","10473","it should be the first test","register page Load","2026-10-20","passed","2026-10-20","","","",""
